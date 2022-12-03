@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <>
       <div className="container" style={{ padding: 10, }}>
+        <Head><title>Javascript Tools | Aniket-JS</title></Head>
         <div className="popularAppsHeading" style={{ marginBottom: 20, }}>
           Popular Apps
         </div>
