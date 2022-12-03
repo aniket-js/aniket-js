@@ -97,7 +97,7 @@ function JsRequireToEs6() {
                 <CodeBlock blockTitle="*" canCopy={true} codestring={codeString} />
             </CollapsableCard>
 
-            <CollapsableCard title={"Expected Output"}>
+            <CollapsableCard expanded={true} title={"Expected Output"}>
                 <CodeBlock blockTitle="*" canCopy={true} codestring={expectedOutputString} />
             </CollapsableCard>
 
