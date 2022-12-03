@@ -92,7 +92,7 @@ function JsRequireToEs6() {
     return (
         <ContentPage title="JS Require statement to Es6 Converter"
             desc=" Paste list of es6 require statements line by line, get es6 imports in output">
-            <Head>JS Require statement to Es6 Converter</Head>
+            <Head><title>JS Require statement to Es6 Converter</title></Head>
             <CollapsableCard title={"Expected Input"}>
                 <CodeBlock blockTitle="*" canCopy={true} codestring={codeString} />
             </CollapsableCard>

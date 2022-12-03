@@ -10,6 +10,9 @@ import ContentPage from '../layouts/ContentPage';
 import { Paper, TextareaAutosize } from '@mui/material';
 import TextArea from '../components/TextArea'
 import AppCard from '../components/AppCard';
+import { jsList } from '../constants/pagesList'
+
+
 
 export default function Home() {
 
@@ -17,10 +20,16 @@ export default function Home() {
 
   return (
     <>
-      <div className="container" style={{ margin: 'auto', padding: 10 }}>
-        {
-          [1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (<AppCard key={index} item={item} />))
-        }
+      <div className="container" style={{ padding: 10, }}>
+        <div className="popularAppsHeading" style={{ marginBottom: 20, }}>
+          Popular Apps
+        </div>
+        <div className="popularAppsContainer" style={{ display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {
+            jsList.map((item, index) => (<AppCard key={index} item={item} category="Javascript" />))
+          }
+        </div>
+
 
 
       </div>

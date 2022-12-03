@@ -1,3 +1,3 @@
 export default {
-    APP_NAME: "Dev Tools",
+    APP_NAME: "ANIKET JS",
 }
