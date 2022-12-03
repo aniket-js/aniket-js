@@ -50,6 +50,14 @@ function LeftSidebar() {
                             Javascript
                         </div>
                     </MenuItem>
+
+                    <MenuItem>
+                        <Link href="https://aniket-mern.github.io">
+                            <div className="text">
+                                About Me.
+                            </div>
+                        </Link>
+                    </MenuItem>
                 </div>
 
             </Box>
