@@ -7,10 +7,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
 
-export default function CollapsableCard({ title, children }) {
+export default function CollapsableCard({ title, children, expanded = false }) {
     return (
         <div>
-            <Accordion sx={{ marginBottom: "16px" }}>
+            <Accordion defaultExpanded={expanded} sx={{ marginBottom: "16px" }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -29,5 +29,6 @@ export default function CollapsableCard({ title, children }) {
 
 CollapsableCard.prototype = {
     title: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
+    expanded: PropTypes.bool
 }
