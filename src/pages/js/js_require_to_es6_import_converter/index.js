@@ -4,6 +4,7 @@ import ContentPage from '../../../layouts/ContentPage'
 import CollapsableCard from '../../../components/CollapsableCard'
 import TextArea from '../../../components/TextArea';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 
 function JsRequireToEs6() {
@@ -91,6 +92,7 @@ function JsRequireToEs6() {
     return (
         <ContentPage title="JS Require statement to Es6 Converter"
             desc=" Paste list of es6 require statements line by line, get es6 imports in output">
+            <Head>JS Require statement to Es6 Converter</Head>
             <CollapsableCard title={"Expected Input"}>
                 <CodeBlock blockTitle="*" canCopy={true} codestring={codeString} />
             </CollapsableCard>
