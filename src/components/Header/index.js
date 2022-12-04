@@ -18,6 +18,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import config from '../../config';
 import Switch from '@mui/material/Switch';
 import useSiteTheme, { ThemeMode } from '../../hooks/useSiteTheme'
+import Link from 'next/link';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -153,14 +154,16 @@ export default function PrimarySearchAppBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        {config.APP_NAME}
-                    </Typography>
+                    <Link href='/'>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="div"
+                            sx={{ display: { xs: 'none', sm: 'block' } }}
+                        >
+                            {config.APP_NAME}
+                        </Typography>
+                    </Link>
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
