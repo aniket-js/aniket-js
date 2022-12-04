@@ -5,6 +5,7 @@ import CollapsableCard from '../../../components/CollapsableCard'
 import TextArea from '../../../components/TextArea';
 import { useEffect } from 'react';
 import Head from 'next/head';
+import { removeExtraSpaceFromString } from '../../../utils/helpers';
 
 
 function JsRequireToEs6() {
@@ -32,6 +33,8 @@ function JsRequireToEs6() {
 
             let onlyVariables = []
             statementList.forEach((st, i) => {
+
+                st = removeExtraSpaceFromString(st.trim())
                 const tempSt = st.split(' ');
 
                 if (tempSt.length === 1) {
